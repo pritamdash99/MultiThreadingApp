@@ -1,5 +1,6 @@
 # MultiThreadingApp
-An iOS App showing multithreading concepts 
+An iOS App showing multithreading concepts.
+
 This app uses Thread class and creates sub classes to do parallel operations, it also uses Image view to change image using multithreading concepts 
 KeyNote : 
 (GCD : Grand Central Dispatch)
