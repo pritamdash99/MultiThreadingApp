@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,30 +16,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd - mm - yyyy hh : mm : ss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="US6-dG-TQb">
-                                <rect key="frame" x="10" y="244" width="394" height="30"/>
+                                <rect key="frame" x="10" y="267" width="394" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.09834296556721614" green="0.67993280998210315" blue="0.60199551402393714" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="dY5-Uk-57f"/>
+                                    <constraint firstAttribute="height" constant="30" id="swz-wL-e8x"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ld3-OO-7so">
-                                <rect key="frame" x="20" y="375" width="374" height="263"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.54632986400000005" green="0.96611279250000004" blue="0.4259666956" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARVEL CHARACTERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEX-lZ-Zhl">
+                                <rect key="frame" x="10" y="181" width="394" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.098342965569999996" green="0.67993281000000005" blue="0.60199551399999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="x1O-ll-FKv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beast.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ld3-OO-7so">
+                                <rect key="frame" x="63" y="334" width="288" height="301"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="301" id="t99-qy-L5C"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iI0-TJ-wgL">
+                                <rect key="frame" x="10" y="707" width="394" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.098342965569999996" green="0.67993281000000005" blue="0.60199551399999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YTe-aT-qy2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.098342965569999996" green="0.67993281000000005" blue="0.60199551399999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="US6-dG-TQb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="LiV-B5-vb8"/>
-                            <constraint firstItem="US6-dG-TQb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="RJf-CW-zLo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="US6-dG-TQb" secondAttribute="trailing" constant="10" id="hge-ge-xLz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ld3-OO-7so" secondAttribute="trailing" constant="63" id="Loo-KL-Cdx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="US6-dG-TQb" secondAttribute="trailing" constant="10" id="UtJ-LN-eoS"/>
+                            <constraint firstItem="hEX-lZ-Zhl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="aqf-PX-EeS"/>
+                            <constraint firstItem="US6-dG-TQb" firstAttribute="top" secondItem="hEX-lZ-Zhl" secondAttribute="bottom" constant="56" id="bIm-uL-JuI"/>
+                            <constraint firstItem="US6-dG-TQb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="csK-e6-dX3"/>
+                            <constraint firstItem="iI0-TJ-wgL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="e5K-iu-aoz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iI0-TJ-wgL" secondAttribute="trailing" constant="10" id="i6m-SQ-0a8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iI0-TJ-wgL" secondAttribute="bottom" constant="125" id="myY-uZ-aUU"/>
+                            <constraint firstItem="Ld3-OO-7so" firstAttribute="top" secondItem="US6-dG-TQb" secondAttribute="bottom" constant="37" id="nxa-VJ-3fo"/>
+                            <constraint firstItem="Ld3-OO-7so" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="tPh-Ch-cvy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hEX-lZ-Zhl" secondAttribute="trailing" constant="10" id="wTP-TA-3BD"/>
+                            <constraint firstItem="hEX-lZ-Zhl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="zv5-cv-BCv"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="characterNameLabel" destination="iI0-TJ-wgL" id="MHj-Qp-Tkk"/>
                         <outlet property="labelDate" destination="US6-dG-TQb" id="jax-4F-dLP"/>
+                        <outlet property="marvelCharactersLabel" destination="hEX-lZ-Zhl" id="0Cf-9b-JtV"/>
+                        <outlet property="marvelImageView" destination="Ld3-OO-7so" id="pcp-Cz-vJK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -49,8 +86,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Beast.jpg" width="600" height="600"/>
     </resources>
 </document>

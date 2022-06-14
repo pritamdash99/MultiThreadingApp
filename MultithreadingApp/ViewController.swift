@@ -10,6 +10,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var labelDate : UILabel!
+    @IBOutlet var marvelImageView : UIImageView!
+    @IBOutlet var marvelCharactersLabel : UILabel!
+    @IBOutlet var characterNameLabel : UILabel!
+    
+    var marvelCharactersImageArray : [String] = ["Beast.jpg","CaptainAmerica.jpg","doctor-strange.jpg","Iron-Man.jpg","silver-surfer.jpg","spiderMan.jpg","thanos.jpg","Wolverine.jpg"]
+    
+    var marvelCharactersNameArray : [String] = ["BEAST","CAPTAIN AMERICA","DOCTOR STRANGE","IRON MAN","SILVER SURFER","SPIDER MAN","THANOS","WOLVERINE"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,6 +28,10 @@ class ViewController: UIViewController {
         let thread = TimerThread()
         thread.viewController = self
         thread.start() //here thread starts and gets scheduled on cpu and main() runs
+        
+        let sliderThread = ImageSliderThread()
+        sliderThread.mainVC = self
+        sliderThread.start()
     }
     
 //    func showTimer() -> Void {
@@ -87,3 +99,25 @@ class TimerThread : Thread {
  Main thread by default has a dispatchQueue attached to it.
 
  */
+
+class ImageSliderThread : Thread {
+    var mainVC : ViewController!
+    override func main() {
+        //inifinite loop.
+        var counter = -1
+        while true{
+            counter += 1
+            //The bellow code is updating the UI
+            DispatchQueue.main.async {
+                if(counter == self.mainVC.marvelCharactersImageArray.count){
+                    //Once it reaches last iteration, counter restarts.
+                    counter = 0
+                }
+                let imageFileName = self.mainVC.marvelCharactersImageArray[counter]
+                self.mainVC.marvelImageView.image = UIImage(named: imageFileName)
+                self.mainVC.characterNameLabel.text = self.mainVC.marvelCharactersNameArray[counter]
+            }
+            Thread.sleep(forTimeInterval: 1)
+        }
+    }
+}

@@ -13,6 +13,14 @@
 		AE1D44002858DC3800A932F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1D43FE2858DC3800A932F9 /* Main.storyboard */; };
 		AE1D44022858DC3A00A932F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1D44012858DC3A00A932F9 /* Assets.xcassets */; };
 		AE1D44052858DC3A00A932F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1D44032858DC3A00A932F9 /* LaunchScreen.storyboard */; };
+		AE1D44152858EB3A00A932F9 /* thanos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE1D440D2858EB3900A932F9 /* thanos.jpg */; };
+		AE1D44162858EB3A00A932F9 /* doctor-strange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE1D440E2858EB3900A932F9 /* doctor-strange.jpg */; };
+		AE1D44172858EB3A00A932F9 /* Beast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE1D440F2858EB3900A932F9 /* Beast.jpg */; };
+		AE1D44182858EB3A00A932F9 /* Iron-Man.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE1D44102858EB3900A932F9 /* Iron-Man.jpg */; };
+		AE1D44192858EB3A00A932F9 /* spiderMan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE1D44112858EB3A00A932F9 /* spiderMan.jpg */; };
+		AE1D441A2858EB3A00A932F9 /* Wolverine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE1D44122858EB3A00A932F9 /* Wolverine.jpg */; };
+		AE1D441B2858EB3A00A932F9 /* CaptainAmerica.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE1D44132858EB3A00A932F9 /* CaptainAmerica.jpg */; };
+		AE1D441C2858EB3A00A932F9 /* silver-surfer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE1D44142858EB3A00A932F9 /* silver-surfer.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		AE1D44012858DC3A00A932F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE1D44042858DC3A00A932F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE1D44062858DC3A00A932F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE1D440D2858EB3900A932F9 /* thanos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thanos.jpg; sourceTree = "<group>"; };
+		AE1D440E2858EB3900A932F9 /* doctor-strange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "doctor-strange.jpg"; sourceTree = "<group>"; };
+		AE1D440F2858EB3900A932F9 /* Beast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Beast.jpg; sourceTree = "<group>"; };
+		AE1D44102858EB3900A932F9 /* Iron-Man.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Iron-Man.jpg"; sourceTree = "<group>"; };
+		AE1D44112858EB3A00A932F9 /* spiderMan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spiderMan.jpg; sourceTree = "<group>"; };
+		AE1D44122858EB3A00A932F9 /* Wolverine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wolverine.jpg; sourceTree = "<group>"; };
+		AE1D44132858EB3A00A932F9 /* CaptainAmerica.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CaptainAmerica.jpg; sourceTree = "<group>"; };
+		AE1D44142858EB3A00A932F9 /* silver-surfer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "silver-surfer.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		AE1D43F72858DC3800A932F9 /* MultithreadingApp */ = {
 			isa = PBXGroup;
 			children = (
+				AE1D440C2858EAEA00A932F9 /* Images */,
 				AE1D43F82858DC3800A932F9 /* AppDelegate.swift */,
 				AE1D43FA2858DC3800A932F9 /* SceneDelegate.swift */,
 				AE1D43FC2858DC3800A932F9 /* ViewController.swift */,
@@ -65,6 +82,21 @@
 				AE1D44062858DC3A00A932F9 /* Info.plist */,
 			);
 			path = MultithreadingApp;
+			sourceTree = "<group>";
+		};
+		AE1D440C2858EAEA00A932F9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AE1D440F2858EB3900A932F9 /* Beast.jpg */,
+				AE1D44132858EB3A00A932F9 /* CaptainAmerica.jpg */,
+				AE1D440E2858EB3900A932F9 /* doctor-strange.jpg */,
+				AE1D44102858EB3900A932F9 /* Iron-Man.jpg */,
+				AE1D44142858EB3A00A932F9 /* silver-surfer.jpg */,
+				AE1D44112858EB3A00A932F9 /* spiderMan.jpg */,
+				AE1D440D2858EB3900A932F9 /* thanos.jpg */,
+				AE1D44122858EB3A00A932F9 /* Wolverine.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +158,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE1D44052858DC3A00A932F9 /* LaunchScreen.storyboard in Resources */,
+				AE1D44172858EB3A00A932F9 /* Beast.jpg in Resources */,
+				AE1D44182858EB3A00A932F9 /* Iron-Man.jpg in Resources */,
+				AE1D441A2858EB3A00A932F9 /* Wolverine.jpg in Resources */,
 				AE1D44022858DC3A00A932F9 /* Assets.xcassets in Resources */,
+				AE1D44152858EB3A00A932F9 /* thanos.jpg in Resources */,
+				AE1D44162858EB3A00A932F9 /* doctor-strange.jpg in Resources */,
+				AE1D441B2858EB3A00A932F9 /* CaptainAmerica.jpg in Resources */,
 				AE1D44002858DC3800A932F9 /* Main.storyboard in Resources */,
+				AE1D44192858EB3A00A932F9 /* spiderMan.jpg in Resources */,
+				AE1D441C2858EB3A00A932F9 /* silver-surfer.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
